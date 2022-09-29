@@ -23,6 +23,7 @@ void write(char *file){
 	}
     fclose(fp);
 }
+/* low end computing way of parsing file ..... */
 void load(char *file, struct song* songs){
 	// load all the song details from the file and extract song no, count,rating, and duration. 
 	int c = 0, index = 0;
@@ -125,7 +126,7 @@ void report(struct song* songs){
 
 
 
-	// here we are displaying song id that is why adding 1 ....
+	// here we are displaying song id (s_no) that is why adding 1 ....
 	printf("Least played song: %d\n", lps + 1);
 	printf("Most played song: %d\n", mps + 1);
 	printf("Least ranked song: %d\n", lrs + 1);
